@@ -31,10 +31,10 @@ class Title extends CI_Controller {
             $row = array();
             $row[] = $title->title;
             
- 
+            $row[] = '<a class="btn btn-primary btn-xs" href="chart/index/'.$title->id.'" title="Edit"><i class="glyphicon glyphicon-plus"></i> Add Data</a>';
             //add html for action
-            $row[] = '<a class="btn btn-sm btn-primary" href="javascript:void(0)" title="Edit" onclick="edit_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
-                  <a class="btn btn-sm btn-danger" href="javascript:void(0)" title="Hapus" onclick="delete_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-trash"></i> Delete</a>';
+            $row[] = '<a class="btn btn-sm btn-success btn-xs" href="javascript:void(0)" title="Edit" onclick="edit_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
+                  <a class="btn btn-sm btn-danger btn-xs" href="javascript:void(0)" title="Hapus" onclick="delete_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-trash"></i> Delete</a>';
  
             $data[] = $row;
         }
@@ -65,6 +65,13 @@ class Title extends CI_Controller {
         $data2=array(
           array(
             'id' => $this->input->post('id'),
+            'hc-key' => 'id-3700',
+            'wilayah' => '-',
+            'value' => '0',
+            'title' => $this->db->insert_id()
+          ),
+          array(
+            'id' => $this->input->post('id'),
             'hc-key' => 'id-ac',
             'wilayah' => 'Aceh',
             'value' => '0',
@@ -72,7 +79,7 @@ class Title extends CI_Controller {
           ),
           array(
             'id' => $this->input->post('id'),
-            'hc-key' => 'id-kl',
+            'hc-key' => 'id-ki',
             'wilayah' => 'Kalimantan Timur / East Kalimantan',
             'value' => '0',
             'title' => $this->db->insert_id()
@@ -149,14 +156,14 @@ class Title extends CI_Controller {
           ),
           array(
             'id' => $this->input->post('id'),
-            'hc-key' => 'id-kr / ',
+            'hc-key' => 'id-kr',
             'wilayah' => 'Kepulauan Riau',
             'value' => '0',
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
-            'hc-key' => 'id-lb',
+            'hc-key' => 'id-ib',
             'wilayah' => 'Papua Barat / West Papua',
             'value' => '0',
             'title' => $this->db->insert_id()
