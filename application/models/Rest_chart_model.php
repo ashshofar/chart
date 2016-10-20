@@ -7,16 +7,10 @@ class Rest_chart_model extends CI_Model {
     $this->tbl = "chart";
   }
 
-  public function getCountPengguna($id)
+  public function getPengguna($id)
   {
       $this->db->where('title',$id);
-      return $this->db->count_all_results('chart', FALSE);
-  }
-
-  public function getPengguna($id, $page, $size)
-  {
-      $this->db->where('title',$id);
-      return $this->db->get('chart', $size, $page);
+      return $this->db->get('chart');
   }
 
  }

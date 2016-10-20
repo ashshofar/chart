@@ -67,238 +67,238 @@ class Title extends CI_Controller {
             'id' => $this->input->post('id'),
             'hc-key' => 'id-3700',
             'wilayah' => '-',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ac',
             'wilayah' => 'Aceh',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ki',
-            'wilayah' => 'Kalimantan Timur / East Kalimantan',
-            'value' => '0',
+            'wilayah' => 'Kalimantan Timur | East Kalimantan',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-jt',
-            'wilayah' => 'Jawa Tengah / Central Java',
-            'value' => '0',
+            'wilayah' => 'Jawa Tengah | Central Java',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-be',
             'wilayah' => 'Bengkulu',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-bt',
             'wilayah' => 'Banten',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-kb',
-            'wilayah' => 'Kalimantan Barat / West Kalimanatan',
-            'value' => '0',
+            'wilayah' => 'Kalimantan Barat | West Kalimanatan',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-bb',
             'wilayah' => 'Bangka Belitung',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ba',
             'wilayah' => 'Bali',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ji',
-            'wilayah' => 'Jawa Timur / East Java',
-            'value' => '0',
+            'wilayah' => 'Jawa Timur | East Java',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ks',
-            'wilayah' => 'Kalimantan Selatan / South Kalimantan',
-            'value' => '0',
+            'wilayah' => 'Kalimantan Selatan | South Kalimantan',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-nt',
-            'wilayah' => 'Nusa Tenggara Timur / East Nusa Tenggara',
-            'value' => '0',
+            'wilayah' => 'Nusa Tenggara Timur | East Nusa Tenggara',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-se',
-            'wilayah' => 'Sulawesi Selatan / South Sulawesi',
-            'value' => '0',
+            'wilayah' => 'Sulawesi Selatan | South Sulawesi',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-kr',
             'wilayah' => 'Kepulauan Riau',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ib',
-            'wilayah' => 'Papua Barat / West Papua',
-            'value' => '0',
+            'wilayah' => 'Papua Barat | West Papua',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-su',
-            'wilayah' => 'Sumatera Utara / North Sumatera',
-            'value' => '0',
+            'wilayah' => 'Sumatera Utara | North Sumatera',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ri',
             'wilayah' => 'Riau',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-sw',
-            'wilayah' => 'Sulawesi Utara / North Sulawesi',
-            'value' => '0',
+            'wilayah' => 'Sulawesi Utara | North Sulawesi',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-la',
-            'wilayah' => 'Maluku Utara / North Maluku',
-            'value' => '0',
+            'wilayah' => 'Maluku Utara | North Maluku',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-sb',
-            'wilayah' => 'Sumatera Barat / West Sumatera',
-            'value' => '0',
+            'wilayah' => 'Sumatera Barat | West Sumatera',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ma',
             'wilayah' => 'Maluku',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-nb',
-            'wilayah' => 'Nusa Tenggara Barat / West Nusa Tenggara',
-            'value' => '0',
+            'wilayah' => 'Nusa Tenggara Barat | West Nusa Tenggara',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-sg',
-            'wilayah' => 'Sulawesi Tenggara / Southeast Sulawesi',
-            'value' => '0',
+            'wilayah' => 'Sulawesi Tenggara | Southeast Sulawesi',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-st',
-            'wilayah' => 'Sulawesi Tengah / Central Sulawesi',
-            'value' => '0',
+            'wilayah' => 'Sulawesi Tengah | Central Sulawesi',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-pa',
             'wilayah' => 'Papua',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-jr',
-            'wilayah' => 'Jawa Barat / West Java',
-            'value' => '0',
+            'wilayah' => 'Jawa Barat | West Java',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-1024',
             'wilayah' => 'Lampung',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-jk',
             'wilayah' => 'Jakarta',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-go',
             'wilayah' => 'Gorontalo',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-yo',
             'wilayah' => 'Yogyakarta',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-kt',
-            'wilayah' => 'Kalimantan Tengah / Central Kalimantan',
-            'value' => '0',
+            'wilayah' => 'Kalimantan Tengah | Central Kalimantan',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-sl',
-            'wilayah' => 'Sumatera Selatan / South Sumatera',
-            'value' => '0',
+            'wilayah' => 'Sumatera Selatan | South Sumatera',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-sr',
-            'wilayah' => 'Sulawesi Barat / West Sulawesi',
-            'value' => '0',
+            'wilayah' => 'Sulawesi Barat | West Sulawesi',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
           array(
             'id' => $this->input->post('id'),
             'hc-key' => 'id-ja',
             'wilayah' => 'Jambi',
-            'value' => '0',
+            'value' => 1,
             'title' => $this->db->insert_id()
           ),
         );

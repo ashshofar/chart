@@ -8,17 +8,17 @@ class Restchart extends CI_Controller {
     $this->load->model('Rest_chart_model', 'rest');
   }
 
-  public function getPengguna($id, $page, $size)
+  public function getPengguna($id)
   {
 
-    $response = array(
-      'content' => $this->rest->getPengguna($id, ($page - 1) * $size, $size)->result(),
-      'totalPages' => ceil($this->rest->getCountPengguna($id) / $size));
+   // $response = array(
+      $response = $this->rest->getPengguna($id)->result();
+    //);
 
     $this->output
       ->set_status_header(200)
       ->set_content_type('application/json', 'utf-8')
-      ->set_output(json_encode($response, JSON_PRETTY_PRINT))
+      ->set_output(json_encode($response, JSON_NUMERIC_CHECK |JSON_PRETTY_PRINT| JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES))
       ->_display();
       exit;
   }

@@ -1,26 +1,39 @@
 <link href="<?php echo base_url('assets/highmaps/high.css')?>" rel="stylesheet">
 
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/countries/id/id-all.js"></script>
+
 <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
 		    	<div class="x_content">
-					<div id="container"></div>
+                	<div id="container"></div>
             	</div>
             </div>
         </div>
 </div>
 
+
+
 <script>
 $(function () {
 
     // Prepare demo data
+    var xhReq = new XMLHttpRequest();
+    xhReq.open("GET", "http://localhost:8888/chart/restchart/getpengguna/17", false);
+    xhReq.send(null);
+    var data = JSON.parse(xhReq.responseText);
+
     /*
     var data;
-    $.getJSON("http://localhost:8888/chart/restchart/getpengguna/11/1/33", function(json){
+    $.getJSON("http://localhost:8888/chart/restchart/getpengguna/17", function(json){
     	data = json;
 	});
-	*/
+    */
 
+    
+	/*
 	var data = [
 		 {
             "id": "267",
@@ -33,14 +46,14 @@ $(function () {
             "id": "268",
             "hc-key": "id-ac",
             "wilayah": "Aceh",
-            "value": "3434",
+            "value": 3434,
             "title": "16"
         },
         {
             "id": "269",
             "hc-key": "id-ki",
             "wilayah": "Kalimantan Timur \/ East Kalimantan",
-            "value": "4545454",
+            "value": 4545454,
             "title": "16"
         },
         {
@@ -257,17 +270,17 @@ $(function () {
             "id": "300",
             "hc-key": "id-ja",
             "wilayah": "Jambi",
-            "value": "0",
+            "value": 0,
             "title": "16"
         }
 	];
-    
+    */
 
-    // Initiate the chart
+    /// Initiate the chart
     $('#container').highcharts('Map', {
 
         title : {
-            text : 'Highmaps basic demo'
+            text : ''
         },
 
         subtitle : {
@@ -289,7 +302,7 @@ $(function () {
             data : data,
             mapData: Highcharts.maps['countries/id/id-all'],
             joinBy: 'hc-key',
-            name: 'Data Chart',
+            name: 'Random data',
             states: {
                 hover: {
                     color: '#BADA55'
@@ -302,11 +315,8 @@ $(function () {
         }]
     });
 });
-</script>
 
-<script src="https://code.highcharts.com/maps/highmaps.js"></script>
-<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/mapdata/countries/id/id-all.js"></script>
+</script>
 
 <!--
 <script src="<?php //echo base_url('assets/highmap/exporting.js')?>"></script>
