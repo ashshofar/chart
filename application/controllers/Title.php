@@ -31,7 +31,8 @@ class Title extends CI_Controller {
             $row = array();
             $row[] = $title->title;
             
-            $row[] = '<a class="btn btn-primary btn-xs" href="chart/index/'.$title->id.'" title="Edit"><i class="glyphicon glyphicon-plus"></i> Add Data</a>';
+            $row[] = '<a class="btn btn-primary btn-xs" href="chart/index/'.$title->id.'" title="Edit"><i class="glyphicon glyphicon-plus"></i> Add Data</a>
+            <a class="btn btn-warning btn-xs" href="chart/view/'.$title->id.'" title="Edit"><i class="glyphicon glyphicon-eye-open"></i> View Chart</a>';
             //add html for action
             $row[] = '<a class="btn btn-sm btn-success btn-xs" href="javascript:void(0)" title="Edit" onclick="edit_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-pencil"></i> Edit</a>
                   <a class="btn btn-sm btn-danger btn-xs" href="javascript:void(0)" title="Hapus" onclick="delete_person('."'".$title->id."'".')"><i class="glyphicon glyphicon-trash"></i> Delete</a>';

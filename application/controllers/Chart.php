@@ -89,11 +89,13 @@ class Chart extends CI_Controller {
         View Chart
     */
 
-    public function view()
+    public function view($id)
     {
+        $data = array('foo' => $id);
         $this->_init();
         $this->load->helper('url');
-        $this->load->view('chart/view');
+        $data['mapcharts'] = $this->chart->getAll($id);
+        $this->load->view('chart/view', $data);
     }
  
 }
